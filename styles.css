@@ -289,6 +289,14 @@ body {
 body {
     padding-top: var(--height-navbar, 70px); /* Ajusta este valor a la altura real de tu navbar */
 }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--success-color);
+  color: var(--text-color);
+  box-shadow: var(--shadow);
+}
 
 .navbar-container {
   display: flex;
@@ -300,7 +308,7 @@ body {
 
 .navbar-brand {
   font-size: 1.5rem;
-  color: var(--text-color);
+  color: var(--gradient-t);
   text-decoration: none;
 }
 
