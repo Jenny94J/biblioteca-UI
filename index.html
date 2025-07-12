@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca UI - Componentes Modernos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#inicio" class="navbar-brand">UI Library</a>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="#inicio" class="navbar-link">Inicio</a></li>
+                <li><a href="#botones" class="navbar-link">Botones</a></li>
+                <li><a href="#formularios" class="navbar-link">Formularios</a></li>
+                <li><a href="#tablas" class="navbar-link">Tablas</a></li>
+                <li><a href="#tarjetas" class="navbar-link">Tarjetas</a></li>
+                <li><a href="#menus" class="navbar-link">Menús</a></li>
+                <li><a href="#modales" class="navbar-link">Modales</a></li>
+                <li><a href="#alertas" class="navbar-link">Alertas</a></li>
+                <li><a href="#notificaciones" class="navbar-link">Notificaciones</a></li>
+            </ul>
+            <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Bienvenido a UI Library</h1>
+            <p>Una colección moderna, reutilizable y escalable de componentes de interfaz de usuario con CSS avanzado.</p>
+        </div>
+    </section>
+
+    <section id="botones" class="component-section">
+        <h2 class="section-title">Botones UI</h2>
+        <p class="section-description">Botones modernos con diferentes estilos y estados</p>
+        
+        <div class="button-showcase">
+            <button class="btn primary">Primario</button>
+            <button class="btn secondary">Secundario</button>
+            <button class="btn success">Éxito</button>
+            <button class="btn danger">Peligro</button>
+            <button class="btn disabled">Desactivado</button>
+        </div>
+    </section>
+
+    <section id="formularios" class="form-wrapper"> 
+        <div class="form-container">
+            <h3 class="form-subtitle">Formulario de Contacto</h3>
+            
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-input" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Apellido</label>
+                        <input type="text" class="form-input" placeholder="Tu apellido">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" placeholder="tu@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Teléfono</label>
+                    <input type="tel" class="form-input" placeholder="+34 600 000 000">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Asunto</label>
+                    <select class="form-select">
+                        <option>Selecciona un asunto</option>
+                        <option>Consulta general</option>
+                        <option>Soporte técnico</option>
+                        <option>Colaboración</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Mensaje</label>
+                    <textarea class="form-input form-textarea" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" class="checkbox-input" id="terms">
+                    <label class="checkbox-label" for="terms">
+                        Acepto los términos y condiciones
+                    </label>
+                </div>
+                
+                <button type="submit" class="form-button">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="tablas" class="component-section">
+        <h2 class="section-title">Tablas UI</h2>
+        <p class="section-description">Tablas responsive y modernas para mostrar datos</p>
+        
+        <div class="table-container">
+            <table class="ui-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Rol</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Juan Pérez</td>
+                        <td>juan@email.com</td>
+                        <td>Admin</td>
+                        <td><span class="status active">Activo</span></td>
+                        <td>
+                            <button class="btn-action edit">Editar</button>
+                            <button class="btn-action delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>María García</td>
+                        <td>maria@email.com</td>
+                        <td>Usuario</td>
+                        <td><span class="status inactive">Inactivo</span></td>
+                        <td>
+                            <button class="btn-action edit">Editar</button>
+                            <button class="btn-action delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Carlos López</td>
+                        <td>carlos@email.com</td>
+                        <td>Editor</td>
+                        <td><span class="status active">Activo</span></td>
+                        <td>
+                            <button class="btn-action edit">Editar</button>
+                            <button class="btn-action delete">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="tarjetas" class="component-section">
+        <h2 class="section-title">Tarjetas UI</h2>
+        <p class="section-description">Tarjetas elegantes para mostrar contenido organizado</p>
+        
+        <div class="cards-container">
+            <div class="ui-card">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Tarjeta con Imagen</h3>
+                    <p class="card-text">Esta es una tarjeta con imagen que muestra contenido de forma elegante y moderna.</p>
+                    <div class="card-actions">
+                        <button class="btn primary">Ver más</button>
+                        <button class="btn secondary">Compartir</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ui-card">
+                <div class="card-body">
+                    <h3 class="card-title">Tarjeta Simple</h3>
+                    <p class="card-text">Una tarjeta simple sin imagen, perfecta para mostrar texto e información básica.</p>
+                    <div class="card-actions">
+                        <button class="btn success">Aceptar</button>
+                        <button class="btn danger">Rechazar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ui-card">
+                <div class="card-body">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Tarjeta con Ícono</h3>
+                    <p class="card-text">Tarjeta con ícono destacado para mostrar estadísticas o características importantes.</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-number">1,234</span>
+                            <span class="stat-label">Usuarios</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menus" class="component-section">
+        <h2 class="section-title">Menús UI</h2>
+        <p class="section-description">Menús desplegables y de navegación modernos</p>
+        
+        <div class="menu-showcase">
+            <div class="menu-item">
+                <h4>Menú Desplegable</h4>
+                <div class="dropdown-demo">
+                    <button class="btn secondary dropdown-trigger" data-target="menu1">
+                        Opciones ▼
+                    </button>
+                    <div class="dropdown-menu" id="menu1">
+                        <a href="#" class="dropdown-item">Perfil</a>
+                        <a href="#" class="dropdown-item">Configuración</a>
+                        <a href="#" class="dropdown-item">Ayuda</a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <h4>Menú Contextual</h4>
+                <div class="context-menu-demo">
+                    <div class="context-trigger">
+                        <p>Haz clic derecho aquí</p>
+                    </div>
+                    <div class="context-menu" id="contextMenu">
+                        <a href="#" class="context-item">Copiar</a>
+                        <a href="#" class="context-item">Pegar</a>
+                        <a href="#" class="context-item">Cortar</a>
+                        <hr class="context-divider">
+                        <a href="#" class="context-item">Eliminar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modales" class="component-section">
+        <h2 class="section-title">Modales UI</h2>
+        <p class="section-description">Ventanas modales elegantes y accesibles</p>
+        
+        <div class="modal-showcase">
+            <button class="btn primary" onclick="openModal('modal1')">Modal Simple</button>
+            <button class="btn secondary" onclick="openModal('modal2')">Modal con Formulario</button>
+            <button class="btn danger" onclick="openModal('modal3')">Modal de Confirmación</button>
+        </div>
+        
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Título del Modal</h3>
+                    <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Este es un modal simple con contenido básico. Puedes agregar cualquier tipo de información aquí.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn secondary" onclick="closeModal('modal1')">Cancelar</button>
+                    <button class="btn primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Agregar Usuario</h3>
+                    <button class="modal-close" onclick="closeModal('modal2')">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-input" placeholder="Nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" placeholder="correo@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Rol</label>
+                            <select class="form-select">
+                                <option>Seleccionar rol</option>
+                                <option>Admin</option>
+                                <option>Usuario</option>
+                                <option>Editor</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn secondary" onclick="closeModal('modal2')">Cancelar</button>
+                    <button class="btn success">Guardar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="modal3">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <h3>Confirmar Acción</h3>
+                    <button class="modal-close" onclick="closeModal('modal3')">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Estás seguro de que deseas eliminar este elemento? Esta acción no se puede deshacer.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn secondary" onclick="closeModal('modal3')">Cancelar</button>
+                    <button class="btn danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="alertas" class="component-section">
+        <h2 class="section-title">Alertas UI</h2>
+        <p class="section-description">Alertas y mensajes informativos con diferentes tipos</p>
+        
+        <div class="alerts-container">
+            <div class="alert alert-info">
+                <div class="alert-icon">ℹ️</div>
+                <div class="alert-content">
+                    <h4>Información</h4>
+                    <p>Esta es una alerta informativa para mostrar datos importantes al usuario.</p>
+                </div>
+                <button class="alert-close">&times;</button>
+            </div>
+            
+            <div class="alert alert-success">
+                <div class="alert-icon">✅</div>
+                <div class="alert-content">
+                    <h4>Éxito</h4>
+                    <p>¡Operación completada exitosamente! Los datos se han guardado correctamente.</p>
+                </div>
+                <button class="alert-close">&times;</button>
+            </div>
+            
+            <div class="alert alert-warning">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <h4>Advertencia</h4>
+                    <p>Ten cuidado con esta acción. Revisa los datos antes de continuar.</p>
+                </div>
+                <button class="alert-close">&times;</button>
+            </div>
+            
+            <div class="alert alert-error">
+                <div class="alert-icon">❌</div>
+                <div class="alert-content">
+                    <h4>Error</h4>
+                    <p>Se ha producido un error. Por favor, inténtalo de nuevo más tarde.</p>
+                </div>
+                <button class="alert-close">&times;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="notificaciones" class="component-section">
+        <h2 class="section-title">Notificaciones UI</h2>
+        <p class="section-description">Sistema de notificaciones moderno y no intrusivo</p>
+        
+        <div class="notification-showcase">
+            <button class="btn primary" onclick="showNotification('info')">Notificación Info</button>
+            <button class="btn success" onclick="showNotification('success')">Notificación Éxito</button>
+            <button class="btn warning" onclick="showNotification('warning')">Notificación Advertencia</button>
+            <button class="btn danger" onclick="showNotification('error')">Notificación Error</button>
+        </div>
+        
+        <div class="notification-container" id="notificationContainer"></div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbarToggle = document.getElementById('navbar-toggle');
+            const navbarMenu = document.getElementById('navbar-nav');
+            const navbarLinks = document.querySelectorAll('#navbar-nav .navbar-link');
+
+            // Toggle functionality for the hamburger menu
+            navbarToggle.addEventListener('click', () => {
+                navbarMenu.classList.toggle('active');
+                navbarToggle.setAttribute('aria-expanded', navbarMenu.classList.contains('active'));
+            });
+
+            // Smooth scrolling and menu closing for navbar links
+            navbarLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default jump behavior
+
+                    const targetId = link.getAttribute('href'); // Get the ID of the target section (e.g., #tarjetas)
+                    const targetSection = document.querySelector(targetId); // Select the section
+                    
+                    if (targetSection) {
+                        // Smooth scroll to the section
+                        window.scrollTo({
+                            top: targetSection.offsetTop - (document.querySelector('.navbar')?.offsetHeight || 0), // Adjust for fixed navbar height
+                            behavior: 'smooth'
+                        });
+
+                        // Close the menu if it's open (especially for mobile)
+                        if (navbarMenu.classList.contains('active')) {
+                            navbarMenu.classList.remove('active');
+                            navbarToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                });
+            });
+
+            // Dropdown functionality (existing, if any, keep it here or in a separate file)
+            // ... (Your existing dropdown logic would go here if not provided)
+
+            // Modal functions (your existing code)
+            function openModal(modalId) {
+                document.getElementById(modalId).style.display = 'flex';
+            }
+
+            function closeModal(modalId) {
+                document.getElementById(modalId).style.display = 'none';
+            }
+
+            // Close modal when clicking outside (your existing code)
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('modal')) {
+                    e.target.style.display = 'none';
+                }
+            });
+
+            // Alert close functionality (your existing code)
+            document.querySelectorAll('.alert-close').forEach(button => {
+                button.addEventListener('click', () => {
+                    button.parentElement.style.display = 'none';
+                });
+            });
+
+            // Notification system (your existing code)
+            function showNotification(type) {
+                const container = document.getElementById('notificationContainer');
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+                
+                const messages = {
+                    info: 'Esta es una notificación informativa',
+                    success: '¡Operación completada exitosamente!',
+                    warning: 'Ten cuidado con esta acción',
+                    error: 'Se ha producido un error'
+                };
+
+                const icons = {
+                    info: 'ℹ️',
+                    success: '✅',
+                    warning: '⚠️',
+                    error: '❌'
+                };
+
+                notification.innerHTML = `
+                    <div class="notification-icon">${icons[type]}</div>
+                    <div class="notification-content">${messages[type]}</div>
+                    <button class="notification-close">&times;</button>
+                `;
+
+                container.appendChild(notification);
+
+                // Auto remove after 5 seconds
+                setTimeout(() => {
+                    notification.remove();
+                }, 5000);
+
+                // Manual close
+                notification.querySelector('.notification-close').addEventListener('click', () => {
+                    notification.remove();
+                });
+            }
+
+            // Make openModal, closeModal, and showNotification globally accessible
+            window.openModal = openModal;
+            window.closeModal = closeModal;
+            window.showNotification = showNotification;
+        });
+    </script>
+</body>
+</html>
